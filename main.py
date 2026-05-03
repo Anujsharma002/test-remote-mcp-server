@@ -1,7 +1,7 @@
 import random
 from fastmcp import FastMCP
 import json
-mcp = FastMCP(name="Simple calculator server")
+mcp = FastMCP(name="Simple calculator server",auth=None)
 
 @mcp.tool
 def random_number(min_val:int=1, max_val:int=100)->int:
